@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prevent Default</title>
+  </head>
+  <body>
+    <h1>My Form</h1>
+
+    <!-- 폼 요소의 기본 동작
+    HTML에서는 action 속성을 어떤 값으로 설정하든 폼이 제출되었을 때 해당 위치로 데이터가 전송됨
+    또한 브라우저에 뜬 페이지 역시 해당 위치로 이동 -->
+
+    <!-- <form action="/shelter" id="shelterForm">
+      <input type="text" id="catName" />
+      <button>Submit</button>
+    </form>
+
+    <h2>Availabe Cats</h2>
+    <ul id="cats"></ul> -->
+
+    <!-- 실습 -->
+     <p>---------------------------------</p>
+    <h1>Grocery List</h1>
+    <form action="/nowhere">
+      <label for="item">Enter A Product</label>
+      <input type="text" id="product" name="product" />
+      <label for="item">Enter A Quantity</label>
+      <input type="number" id="qty" name="qty" />
+      <button>Submit</button>
+    </form>
+
+    <ul id="list"></ul>
+
+    <script src="form.js"></script>
+  </body>
+</html>
